@@ -20,7 +20,7 @@
 
                     <div class="media">
                         <div class="d-fex flex-column vote-controls">
-                            <a title="This quesion is useful" 
+                            <a title="This question is useful" 
                                 class="vote-up {{ Auth::guest() ? 'off' : '' }}"
                                 onclick="event.preventDefault(); document.getElementById('up-vote-question-{{ $question->id }}').submit();">
                                 <i class="fas fa-caret-up fa-3x"></i>

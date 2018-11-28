@@ -89,3 +89,10 @@ form.form-delete {
 .vote-controls a.vote-accepted {
   color: #28a745;
 }
+
+.post{
+  padding: 20px 0;
+  &:not(:last-child){
+    border-bottom: 1px solid rgba($black, 0.1);
+  }
+}

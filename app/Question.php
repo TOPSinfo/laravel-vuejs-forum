@@ -10,7 +10,7 @@ class Question extends Model
 
     protected $fillable = ['title','body'];
 
-    protected $appends = ['created_date'];
+    protected $appends = ['created_date', 'is_favorited', 'is_favorited_count'];
 
     public function user()
     {

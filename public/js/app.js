@@ -51716,6 +51716,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__event_bus__ = __webpack_require__(74);
 //
 //
 //
@@ -51731,6 +51732,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['answer'],
@@ -51741,20 +51744,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             id: this.answer.id
         };
     },
+    created: function created() {
+        var _this = this;
+
+        __WEBPACK_IMPORTED_MODULE_0__event_bus__["a" /* default */].$on('accepted', function (id) {
+            _this.isBest = id === _this.id;
+        });
+    },
 
 
     methods: {
         create: function create() {
-            var _this = this;
+            var _this2 = this;
 
             axios.post('/answers/' + this.id + '/accept').then(function (res) {
-                _this.$toast.success(res.data.message, "Success", {
+                _this2.$toast.success(res.data.message, "Success", {
                     timeout: 3000,
                     position: 'bottomLeft'
                 });
             });
 
             this.isBest = true;
+
+            __WEBPACK_IMPORTED_MODULE_0__event_bus__["a" /* default */].$emit('accepted', this.id);
         }
     },
 
@@ -52383,6 +52395,20 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 73 */,
+/* 74 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+
+
+var eventBus = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
+
+/* harmony default export */ __webpack_exports__["a"] = (eventBus);
 
 /***/ })
 /******/ ]);

@@ -24,7 +24,7 @@
                         <div class="d-flex align-items-center">
                             <h1>{{ title }}</h1>
                             <div class="ml-auto">
-                                <a href="/questions" class="btn btn-outline-secondary">Back to all Questions</a>
+                                <a href="/laravel_vuejs/public/questions" class="btn btn-outline-secondary">Back to all Questions</a>
                             </div>
                         </div>
                     </div>

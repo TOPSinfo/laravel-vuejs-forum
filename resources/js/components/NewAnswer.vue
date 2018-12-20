@@ -48,7 +48,7 @@ export default {
 
     computed: {
         isInvalid(){
-            return !this.signedIn || this.body.length < 10;
+            return !this.signedIn || this.body.length < 3;
         }
     }
 }

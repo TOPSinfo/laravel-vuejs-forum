@@ -6,7 +6,7 @@
                 <img :src="user.avatar">
             </a>
             <div class="media-body mt-1">
-                <a :href="user.url">{{ user.name }}</a>
+                <a class="author" :href="user.url">{{ user.name }}</a>
             </div>
         </div>
     </div>

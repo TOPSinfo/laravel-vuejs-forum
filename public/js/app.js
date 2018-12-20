@@ -52182,7 +52182,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "media-body mt-1" }, [
-        _c("a", { attrs: { href: _vm.user.url } }, [
+        _c("a", { staticClass: "author", attrs: { href: _vm.user.url } }, [
           _vm._v(_vm._s(_vm.user.name))
         ])
       ])
@@ -52704,7 +52704,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     computed: {
         isInvalid: function isInvalid() {
-            return this.body.length < 10;
+            return this.body.length < 3;
         },
         endpoint: function endpoint() {
             return '/questions/' + this.questionId + '/answers/' + this.id;
@@ -52958,7 +52958,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     computed: {
         isInvalid: function isInvalid() {
-            return !this.signedIn || this.body.length < 10;
+            return !this.signedIn || this.body.length < 3;
         }
     }
 });

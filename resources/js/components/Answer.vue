@@ -107,7 +107,7 @@ export default {
 
     computed: {
         isInvalid (){
-            return this.body.length < 10;    
+            return this.body.length < 3;    
         },
 
         endpoint(){

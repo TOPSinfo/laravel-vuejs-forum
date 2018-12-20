@@ -10598,7 +10598,8 @@ body {
   color: #000;
 }
 
-.custom-post .lead a {
+.custom-post .lead a,
+.author {
   color: #f06649;
 }
 

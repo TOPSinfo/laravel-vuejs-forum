@@ -10604,7 +10604,8 @@ body {
 }
 
 .custom-post .lead {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .btn-outline-info {

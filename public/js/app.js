@@ -52233,7 +52233,7 @@ var render = function() {
                         expression: "title"
                       }
                     ],
-                    staticClass: "form-control form-control-lg",
+                    staticClass: "form-control",
                     attrs: { type: "text" },
                     domProps: { value: _vm.title },
                     on: {
@@ -52299,11 +52299,15 @@ var render = function() {
             )
           : _c("div", { staticClass: "card-body" }, [
               _c("div", { staticClass: "card-title" }, [
-                _c("div", { staticClass: "d-flex align-items-center" }, [
-                  _c("h1", [_vm._v(_vm._s(_vm.title))]),
-                  _vm._v(" "),
-                  _vm._m(0)
-                ])
+                _c(
+                  "div",
+                  { staticClass: "d-flex align-items-center first-header" },
+                  [
+                    _c("h2", [_vm._v(_vm._s(_vm.title))]),
+                    _vm._v(" "),
+                    _vm._m(0)
+                  ]
+                )
               ]),
               _vm._v(" "),
               _c("hr"),
@@ -52389,7 +52393,7 @@ var staticRenderFns = [
       _c(
         "a",
         {
-          staticClass: "btn btn-outline-secondary",
+          staticClass: "btn secondary-btn",
           attrs: { href: "/laravel_vuejs/public/questions" }
         },
         [_vm._v("Back to all Questions")]

@@ -30,14 +30,15 @@
 
   .status {
     &.unanswered {
-      border: none;
+      border: 1px solid #eee;
+      background: #eee;
     }
     &.answered {
-      border: 1px solid $color-green;
-      color: $color-green;
+      border: 1px solid #77bd6c;
+      color: #77bd6c;
     }
     &.answered-accepted {
-      background: $color-green;
+      background: #77bd6c;
       color: $color-white;
     }
   }
@@ -64,7 +65,7 @@ form.form-delete {
 }
 
 .vote-controls span.votes-count {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .vote-controls span.favorites-count {
@@ -100,3 +101,75 @@ form.form-delete {
 [v-cloak]{
   display: none;
 }
+
+body{
+  background: #eee;
+}
+
+.imp-btn{
+  color: #fff;
+  background-image: none;
+  border-color: #f06649;
+  background: #f06649;
+}
+
+.imp-btn:focus,.imp-btn:not(:disabled):not(.disabled):active:focus, .imp-btn:not(:disabled):not(.disabled).active:focus, .show > .imp-btn.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 102, 73, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(240, 102, 73, 0.5);
+}
+.imp-btn.btn:hover, .imp-btn.btn:focus{
+  background: #dc593e;
+  color: #fff;
+}
+
+.first-header h2{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.custom-post h3 a{
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.custom-post .lead a{
+  color: #f06649;
+}
+
+.custom-post .lead{
+  font-size: 1rem;
+}
+
+.btn-outline-info{
+  border-color: #27aae1;
+  color: #27aae1;
+}
+.btn-outline-info:hover{
+  border-color: #27aae1;
+  background: #27aae1;
+  color: #fff;
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle{
+  border-color: #27aae1;
+  color: #27aae1;
+}
+
+.secondary-btn{
+  color: #fff;
+  background-image: none;
+  border-color: #27aae1;
+  background: #27aae1;
+}
+
+.secondary-btn:focus,.secondary-btn:not(:disabled):not(.disabled):active:focus, .secondary-btn:not(:disabled):not(.disabled).active:focus, .show > .secondary-btn.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(30, 139, 185, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(30, 139, 185, 0.5);
+}
+.secondary-btn.btn:hover, .secondary-btn.btn:focus{
+  background: #1e8bb9;
+  color: #fff;
+  border-color:#1e8bb9;
+}
+
+.logo{ width: 120px; }

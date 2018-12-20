@@ -4,7 +4,7 @@
             <div class="card">
                 <form class="card-body" v-if="editing" @submit.prevent="update">
                     <div class="card-title">
-                        <input type="text" class="form-control form-control-lg" v-model="title">
+                        <input type="text" class="form-control" v-model="title">
                     </div>
 
                     <hr>
@@ -21,10 +21,10 @@
                 </form>
                 <div class="card-body" v-else>
                     <div class="card-title">
-                        <div class="d-flex align-items-center">
-                            <h1>{{ title }}</h1>
+                        <div class="d-flex align-items-center first-header">
+                            <h2>{{ title }}</h2>
                             <div class="ml-auto">
-                                <a href="/laravel_vuejs/public/questions" class="btn btn-outline-secondary">Back to all Questions</a>
+                                <a href="/laravel_vuejs/public/questions" class="btn secondary-btn">Back to all Questions</a>
                             </div>
                         </div>
                     </div>

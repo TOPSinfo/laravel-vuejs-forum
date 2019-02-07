@@ -6,6 +6,11 @@ use App\Question;
 use Illuminate\Http\Request;
 use App\Http\Requests\AskQuestionRequest;
 
+/**
+ * Class QuestionsController
+ *
+ * @package App\Http\Controllers
+ */
 class QuestionsController extends Controller
 {
 

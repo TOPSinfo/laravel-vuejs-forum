@@ -6,6 +6,11 @@ use App\Answer;
 use App\Question;
 use Illuminate\Http\Request;
 
+/**
+ * Class AnswersController
+ *
+ * @package App\Http\Controllers
+ */
 class AnswersController extends Controller
 {
     public function __construct()

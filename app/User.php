@@ -32,6 +32,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
     
+    /**
+     * User can have asked many questions
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
     public function questions()
     {
         return $this->hasMany(Question::class);
@@ -42,6 +47,11 @@ class User extends Authenticatable
         return '#';
     }
 
+    /**
+     * User can have answered many answers
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
     public function answers()
     {
         return $this->hasMany(Answer::class);
@@ -54,6 +64,11 @@ class User extends Authenticatable
         return "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?s=" . $size;
     }
 
+    /**
+     * User can have many favourites
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
     public function favorites()
     {
         return $this->belongsToMany(Question::class,'favorites')->withTimestamps();//'author_id','question_id');

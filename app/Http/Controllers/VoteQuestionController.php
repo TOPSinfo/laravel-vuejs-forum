@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use App\Question;
 use Illuminate\Http\Request;
 
+/**
+ * Class VoteQuestionController
+ *
+ * @package App\Http\Controllers
+ */
 class VoteQuestionController extends Controller
 {
     public function __construct()

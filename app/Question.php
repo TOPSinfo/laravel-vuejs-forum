@@ -12,6 +12,9 @@ class Question extends Model
 
     protected $appends = ['created_date', 'is_favorited', 'is_favorited_count', 'body_html'];
 
+    /**
+     * Each question belongs to an user
+     */
     public function user()
     {
         return $this->belongsTo(User::class);

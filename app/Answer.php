@@ -12,11 +12,17 @@ class Answer extends Model
 
     protected $appends = ['created_date','body_html','is_best'];
 
+    /**
+     * Each answer belongs to a question
+     */
     public function question()
     {
         return $this->belongsTo(Question::class);
     }
 
+    /**
+     * Each answer belongs to an user
+     */
     public function user()
     {
         return $this->belongsTo(User::class);
